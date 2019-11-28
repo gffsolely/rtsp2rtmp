@@ -22,3 +22,5 @@ $ ffmpeg.exe -re -i rtsp://localhost/rtsp/live -vcodec copy -f flv rtmp://localh
 ```
 
 转发成功后 客户端就可以使用 rtmp://localhost:1935/live/t1 地址播放
+
+vue-video-live-rtmp 中是web测试客户端
