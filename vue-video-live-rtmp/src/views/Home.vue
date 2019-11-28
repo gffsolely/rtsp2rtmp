@@ -37,11 +37,7 @@ export default {
       videoInfo: [
         { title: '本地rtmp测试', videoSrc: 'rtmp://localhost:1935/live/t1'}
       ]
-    }
-  },
-  mounted () {
-  },
-  methods: {
+    };
   }
 };
 </script>
