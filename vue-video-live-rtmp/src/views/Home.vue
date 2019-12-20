@@ -7,7 +7,7 @@
     <div class="example-title"> # vue-video-player 播放 RTMP 流 </div>
     <Row type="flex" justify="center" :gutter="20">
       <Col :span="18">
-        <Row type="flex" justify="start" :gutter="20" >
+        <Row type="flex" justify="center" :gutter="20" >
           <i-col :span="12" v-for="(item, i) in videoInfo" :key="`info-${i}`" style="margin-bottom:30px;">
             <Card>
               <p slot="title" style="">{{ item.title }}</p>
@@ -19,16 +19,32 @@
         </Row>
       </Col>
     </Row>
+    <div class="example-title"> # flv.js 播放 flv 视频流 </div>
+    <Row type="flex" justify="center">
+      <Col :span="18">
+        <Flv></Flv>
+      </Col>
+    </Row>
+    <div class="example-title"> # vue-video-player 播放 HLS 流 </div>
+    <Row type="flex" justify="center">
+      <Col :span="18">
+        <HlsLive></HlsLive>
+      </Col>
+    </Row>
   </div>
 </template>
 
 <script>
 import RtmpLive from "@/components/RtmpLive.vue";
+import Flv from "@/components/flv.vue";
+import HlsLive from "@/components/HlsLive.vue";
 
 export default {
   name: "home",
   components: {
-    RtmpLive
+    RtmpLive,
+    Flv,
+    HlsLive
   },
   data () {
     return {

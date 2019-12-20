@@ -14,7 +14,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: 'rtmp://live.hkstv.hk.lxdns.com/live/hks2'
+      default: 'rtmp://localhost:1935/live/t1'
     }
   },
   data () {
@@ -34,7 +34,7 @@ export default {
         // muted: true, // 消除所有音频
         // loop: false, // 循环播放
         aspectRatio: "16:9",
-        // poster: 'https://surmon-china.github.io/vue-quill-editor/static/images/surmon-9.jpg' //首屏图片
+        // poster: 'https://localhost/surmon-1.jpg' //首屏图片
       }
     }
   }
